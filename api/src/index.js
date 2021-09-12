@@ -49,7 +49,7 @@ app.put('/matricula/:id', async (req, resp) => {
                 where: { id_matricula: id}
             }
         )
-        resp.sendStatus();
+        resp.sendStatus(200);
     } catch (e) {
         resp.send('Algo de errado não está certo')
     }

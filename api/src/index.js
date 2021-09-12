@@ -62,7 +62,7 @@ app.delete('/matricula/:id', async (req, resp) => {
         let r = await db.tb_matricula.destroy({ where: { id_matricula: id } })
         resp.sendStatus(200);
     }catch (e) {
-        resp.send('Algo de errado não está certo')
+        resp.send('Algo de errado não está certo');
     }
 })
 
